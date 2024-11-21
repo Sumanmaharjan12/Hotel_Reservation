@@ -1,0 +1,230 @@
+ *{
+    background-color: #454444;
+}
+.cross{
+    float: right;
+    width: 40px;
+    font-size: 50px;
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  h1{
+    background-color: transparent;
+  }
+  .top{
+    height: 100vh;
+}
+.top_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clip_path{
+        padding: 35px 0 75px 0;
+        background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url(../image/aboutus.jpg);
+        clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 6rem), 0% 100%);
+}
+#about{
+    width: 90%;
+    margin: 3% auto;
+    padding: 10px 20px;
+    
+}
+h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(253, 251, 251);
+    text-align: center;
+}
+.aboutus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+.about_img{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.about_img img{
+    width: 580px;
+    height: 340px;
+    display: block;
+    transition: 0.5s ease;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.about_img:hover img{
+    transform: scale(1.2);
+}
+
+.content{
+    flex: 1;
+}
+.content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #dedbdb;
+}
+.about_img1 img{
+    max-width:48%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    margin-top: 20px;
+}
+.btn{
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 110px;
+    height: 55px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #73AD21;
+    color: white;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+.wrapper{
+    margin: 55px auto;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    width: 65%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+.wrapper a{
+    text-decoration: none;
+    color: red;
+    float: right;
+    width: 30px;
+}
+  
+html{
+    scroll-behavior: smooth;
+}
+.footer{
+    background: #454444;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+    border-top: 2px solid #ffffff;
+}
+
+.footer_containerleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+}
+
+.footer_containerright{
+    display: flex;
+    flex-direction: column;
+    width: 1170px;
+    margin: auto;
+    
+}
+ul{
+    list-style: none;
+    margin-left: -15px;
+    margin-bottom: 10px;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.footer-col{
+width: 25%;
+padding: 0 20px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px ;
+    font-weight: 500;   
+    margin-left: 20px;
+}
+.footer-col ul li{
+        margin: 10px 10px 10px 0;
+}
+
+.footer-col ul li a, .footer-col ul li p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 7px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer-col .register_style a{
+    font-size: 20px;
+    color: #F85151;
+
+}
+
+.copyright1 {
+    font-size: 12px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #8d8b8b;
+    display: block;
+    transition: all 0.3s ease;
+}
